@@ -1,0 +1,26 @@
+/* WEDDINGS */
+
+const containerWD = document.querySelector(".portfolio__container");
+
+const getImgWD = async () => {
+    try {
+        const res = await axios.get("../img.json");
+        const data = res.data[4];
+        const portfolioContainerWD = document.createDocumentFragment();
+
+    for (let i = 0; i < data.portfolio_wd.length; i++) {
+        const id = data.portfolio_wd[i].id;
+        const imagen = data.portfolio_wd[i].url;
+
+        const imgWD = document.createElement("IMG");
+        imgWD.classList.add("portfolio__images");
+        imgWD.src= imagen;
+        imgWD.alt= id;
+        imgWD.loading = "lazy";
+        portfolioContainerWD.appendChild(imgWD);
+    }
+    containerWD.appendChild(portfolioContainerWD);
+    } catch (e) {console.error("Error durante la carga: ");}
+};
+
+getImgWD();

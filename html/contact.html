@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link href="/home.html">
+    <link href="/html/profile.html">
+    <link href="/html/portfolio.html">
+    <title>VC-Photograph</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo-container">
+            <picture class="header__logo">
+                <source srcset="/assets/img/logo-small.png" media="(max-width: 600px)">
+                <img class="header__logo-img" src="/assets/img/logo.png" alt="Logo">
+            </picture>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a  href="/home.html" class="link">
+                    <span class="material-symbols-outlined">Home</span>
+                    Home</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="/html/profile.html" target="" title="About" class="link">
+                    <span class="material-symbols-outlined">frame_person</span>
+                    About</a>
+                </li>
+                <li class="header__nav-item">
+                     <a href="/html/portfolio.html" target="" title="Portfolio" class="link">
+                    <span class="material-symbols-outlined">work</span>
+                   Portfolio</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="/html/contact.html" target="_blank" title="Contact" class="link">
+                    <span class="material-symbols-outlined">contact_page</span>
+                    Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <h2>Formulario de contacto</h2>
+            <!--INFORMACIÓN BÁSICA-->
+            <fieldset>
+                <legend>INFORMACIÓN BÁSICA</legend>
+                <div class="form__input">
+                    <label for="nombre" class="etiqueta">Nombre</label>
+                    <input type="text" placeholder="John" id="nombre" required="required">
+                </div>
+                <div class="form__input">
+                    <label for="apellido" class="etiqueta">Apellido</label>
+                    <input type="text" placeholder="Doe" id="apellido" required="required">
+                </div>
+                <div class="form__input">
+                    <label class="etiqueta">Email</label>
+                        <input type="email" placeholder="abc123@gmail.com" required="required">
+                </div>
+                <div class="form__input">
+                    <label class="etiqueta">Teléfono</label>
+                    <input type="tel" placeholder="+54 3212 548321" required="required">
+                </div>
+            </fieldset>
+            <!--DETALLES DEL EVENTO A CONTRATAR-->
+            <fieldset>
+                <legend>DETALLES DEL EVENTO</legend>
+                <div class="form__input">
+                    <label class="etiqueta">Tipo de evento
+                        <select name="type-of-user">
+                            <option value="event0">-</option>
+                            <option value="event1">Fiesta de 15 años</option>
+                            <option value="event2">Sesión para niños</option>
+                            <option value="event3">Bodas</option>
+                            <option value="event4">Otro</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form__input" id="servicios15" style="display: none;">
+                    <label for="" class="etiqueta">Servicios para Fiestas de 15:</label>
+                    <div class="checkbox__container">
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="enchastre">Enchastre</label>
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="book_fotos">Book de Fotos</label>
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="cobertura_fiesta">Cobertura de Fiesta</label>
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="gigantografia">Gigantografía</label>
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="libro_firmas">Libro de Firmas</label>
+                    </div>
+                </div>
+                <div class="form__input" id="serviciosBodas" style="display: none;">
+                    <label for="" class="etiqueta">Servicios para Bodas:</label>
+                    <div class="checkbox__container">
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="fotos_impresas">Fotos Impresas</label>
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="book_fotos">Book de Fotos</label>
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="cobertura_fiesta">Cobertura de Fiesta</label>
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="casamiento_civil">Casamiento por Civil</label>
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="casamiento_iglesia">Casamiento por Iglesia</label>
+                    </div>
+                </div>
+                <div class="form__input" id="serviciosNiños" style="display: none;">
+                    <label for="" class="etiqueta">Servicios para Niños:</label>
+                    <div class="checkbox__container">
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="interior">Interior</label>
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="exterior">Exterior</label>
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="fotos_impresas">Fotos Impresas (CANTIDAD y MEDIDA)</label>
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="fotos_digitales">Fotos Digitales</label>
+                    </div>
+                </div>
+                <div class="form__input">
+                    <label for="lugar" class="etiqueta">Lugar</label>
+                    <input type="text" placeholder="Rosario" id="lugar" required="required">
+                </div>
+                <div class="form__input">
+                    <label for="fecha" class="etiqueta">Fecha</label>
+                    <input type="date" id="fecha" required="required">
+                </div>
+            </fieldset>
+            <!--DISCLAIMER-->
+            <div class="form__input">
+                <p class="disclaimer">
+                    <strong>FORMA DE PAGO:</strong><br>
+                    <br>
+                    TOTAL CON <strong>10%</strong> DE DESCUENTO.<br>
+                    <strong>50%</strong> PARA CONGELAR Y <strong>50%</strong> A ACORDAR.<br>
+                    EN CUOTAS CON <strong>10%</strong> DE RECARGO POR MES VENCIDO.<br>
+                    <br>
+                    <strong>EL TOTAL DEL SERVICIO DEBE SER CANCELADO ANTES DEL EVENTO.</strong>
+                </p>
+            </div>
+            <!--TEXTAREA-->
+            <div class="form__input">
+                <label class="etiqueta">Mensaje</label>
+                <textarea rows="8" placeholder="Detalla tu consulta"></textarea>
+            </div>
+        
+            <div class="form__input">
+                <label>Aceptar términos y condiciones</label>
+                    <input type="checkbox" class="checkbox">
+            </div>
+            <div class="form__input">
+                <label for="enviar">Enviar</label>
+                <input type="submit">
+            </div>
+        </form>    
+    </main>J
+    <footer>
+        <p>
+            SOCIAL NETWORKS
+        </p>    
+            <a href="https://www.instagram.com/vc.fotografia_/" target="_blank" title="Instagram">
+                <button class="button">
+                    <img src="/assets/favicon/Instagram/ig-256.ico" alt="">
+                </button>
+            </a>
+        <p>
+            <strong>VC - PHOTOGRAPHS</strong> &copy; Copyright 2027
+        </p>
+    </footer>
+    <script src="/js/contact.js"></script>
+</body>
+</html>
