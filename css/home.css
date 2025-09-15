@@ -143,7 +143,7 @@ h1 {
 .carousel__container img {
     display: flex;
     object-fit: cover;
-    width: 0;
+    width: 3%;
     flex-grow: 1;
     opacity: 0.8;
     filter: drop-shadow(2px 2px 4px #111);
@@ -158,8 +158,8 @@ h1 {
     padding: 5px; 
     background-color: #fff;
     cursor: pointer;
-    width: 5%;
-    height: 70vh;
+    width: 3%;
+    height: 73vh;
     opacity: 1;
     filter: drop-shadow(2px 2px 4px #111);
     filter: drop-shadow(10px 20px 30px #000);

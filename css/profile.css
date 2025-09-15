@@ -126,7 +126,7 @@ body {
     text-shadow: 0 0 10px #000;
     filter: drop-shadow(0 0 2px #fff);
     font-style: oblique;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
     border-radius: 0px;
     text-align: center;
 }
@@ -135,28 +135,31 @@ body {
     background-color: #222;
     padding: 10px;
     margin: 10px auto;
+    margin-bottom: 20px;
 }
         
 .profile__container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    width: 100%;
+    width: 98%;
     height: 100%;
     position: relative;
-    margin: 0;
+    margin: 0 auto;
+    background-color: #222;
+    border-radius: 120px 0 120px 0;
 }
 
 #f1 {
     display: grid;
     grid-column: 1/2;
     position: absolute;
-    bottom: 3em;
-    left: 4em;
+    bottom: 7%;
+    left: 6%;
     margin: 50px auto;
-    width: 500px;
-    height: 750px;
+    width: 70%;
+    height: 75%;
     object-fit: cover;
-    filter: drop-shadow(0 0 20px #000);
+    filter: drop-shadow(0 0 8px #000);
     border: 5px solid #111;
     border-radius: 0;
     transition: scale 0.6s ease-in-out;
@@ -165,26 +168,27 @@ body {
 #f1:hover {
     filter: drop-shadow(0 0 10px #fff);
     filter: drop-shadow(2px 2px 4px #111);
-    filter: drop-shadow(10px 20px 30px #000);
+    filter: drop-shadow(8px 8px 0px #000);
     padding: 5px;
     background-color: #fff;
     outline: 5px solid #999;
     scale: .90;
     cursor: pointer;
     opacity: 1;
+    border-radius: 120px 0 120px 0;
 }
 
 #f2 {
     display: grid;
     grid-column: 3/4;
     position: absolute;
-    top: 2em;
-    left: 3em;
+    top: 10%;
+    left: 23%;
     margin: 50px auto;
-    width: 550px;
-    height: 750px;
+    width: 70%;
+    height: 75%;
     object-fit: cover;
-    filter: drop-shadow(0 0 20px #000);
+    filter: drop-shadow(0 0 8px #000);
     border: 5px solid #111;
     border-radius: 0;
     transition: scale 0.6s ease-in-out;
@@ -193,23 +197,25 @@ body {
 #f2:hover {
     filter: drop-shadow(0 0 10px #fff);
     filter: drop-shadow(2px 2px 4px #111);
-    filter: drop-shadow(10px 20px 30px #000);
+    filter: drop-shadow(8px 8px 0px #000);
     padding: 5px;
     background-color: #fff;
     outline: 5px solid #999;
     scale: .90;
     cursor: pointer;
     opacity: 1;
+    border-radius: 120px 0 120px 0;
 }
 
 .profile__description {
     display: grid;
-    grid-column: 2/3;
+    grid-column: 1/4;
     grid-row: 1;
     background-color: #222;
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 10px;
     margin: 20px auto;
+    width: 50%;
 }
 
 .profile__subtitle {
@@ -223,9 +229,9 @@ body {
 .profile__text {
     font-size: 1rem;
     padding: 0;
-    margin: 0 10px;
+    margin: 0 20px;
     text-align: center;
-    text-wrap: balance;
+    text-wrap: pretty;
 }
 
 #p1::first-letter {
@@ -239,7 +245,7 @@ footer {
     margin-top: 50px;
     padding: 20px 0;
     text-align: center;
-    background-color:var(--footer-color);
+    background-color: var(--footer-color);
     color: #fffd;
     font-size: 1.1rem;
     border-top: 2px solid #fff;
@@ -251,13 +257,13 @@ footer {
 
 footer p {
     padding: 10px;
-    text-align: center; 
+    text-align: center;
     justify-content: center;
     align-items: center;
     margin: auto;
 }
 
-.button{
+.button {
     width: 6rem;
     height: 3rem;
     border: none;
@@ -265,8 +271,8 @@ footer p {
     margin: auto;
 }
 
-.button:hover{
-    opacity: .9;
+.button:hover {
+    opacity: 0.9;
 }
 
 .button img {
@@ -274,10 +280,142 @@ footer p {
     margin: auto;
 }
 
+@media screen and (max-width: 1366px) {
+
+    .header {
+        min-height: 10vh;
+        width: clamp(1024px, 100%, auto);
+    }
+
+    .header__logo-container {
+        width: clamp(80px, 100%, auto);
+        margin: auto;
+        margin-left: 30px;
+    }
+
+    .header__logo-img {
+        width: 90%;
+        width: clamp(70%, 100%, 80%);
+        border: 3px solid #111;
+    }
+
+    .profile__title, .profile__subtitle {
+        letter-spacing: 5px;
+    }
+
+    .profile__title {
+        background-color: #222;
+        padding: 10px;
+        margin: 10px auto;
+        margin-bottom: 20px;
+    }
+            
+    .profile__container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 98%;
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+        border-radius: 120px 0px 120px 0px;
+        background-color: #222;
+    }
+
+    #f1 {
+        display: grid;
+        grid-column: 1/2;
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        margin: 50px auto;
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+        filter: drop-shadow(0 0 8px #000);
+        border: 5px solid #111;
+        border-radius: 0;
+        transition: scale 0.6s ease-in-out;
+    }
+
+    #f1:hover {
+        filter: drop-shadow(0 0 10px #fff);
+        filter: drop-shadow(2px 2px 4px #111);
+        filter: drop-shadow(8px 8px 0px #000);
+        padding: 5px;
+        background-color: #fff;
+        outline: 5px solid #999;
+        scale: .95;
+        cursor: pointer;
+        opacity: 1;
+        border-radius: 120px 0px 120px 0px;
+    }
+
+    #f2 {
+        display: grid;
+        grid-column: 3/4;
+        position: absolute;
+        top: 18%;
+        left: 33%;
+        margin: 50px auto;
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+        filter: drop-shadow(0 0 8px #000);
+        border: 5px solid #111;
+        border-radius: 0;
+        transition: scale 0.6s ease-in-out;
+    }
+
+    #f2:hover {
+        filter: drop-shadow(0 0 10px #fff);
+        filter: drop-shadow(2px 2px 4px #111);
+        filter: drop-shadow(8px 8px 0px #000);
+        padding: 5px;
+        background-color: #fff;
+        outline: 5px solid #999;
+        scale: .95;
+        cursor: pointer;
+        opacity: 1;
+        border-radius: 120px 0px 120px 0px;
+    }
+
+    .profile__description {
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 1;
+        background-color: #222;
+        border-radius: 10px;
+        padding: 10px 0;
+        margin: 20px auto;
+        width: 54%;
+    }
+
+    .profile__subtitle {
+        font-size: 2rem;
+        padding: 0;
+        margin: 0 auto; 
+        padding: 5px 0;
+        text-wrap: balance;
+    }
+
+    .profile__text {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0 20px;
+        text-align: center;
+        text-wrap: pretty;
+    }
+
+    #p1::first-letter {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     
     .header {
-        height: 10vh;
+        min-height: 10vh;
         width: clamp(769px, 100%, auto);
     }
 
@@ -292,12 +430,139 @@ footer p {
         width: clamp(70%, 100%, 80%);
         border: 3px solid #111;
     }
+
+    .profile {
+        min-height: 100vh;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 10px 0px;
+    }
+
+    .profile__title, .profile__subtitle {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 3rem;
+        font-weight: 600;
+        text-shadow: 0 0 10px #000;
+        filter: drop-shadow(0 0 2px #fff);
+        font-style: oblique;
+        letter-spacing: 5px;
+        border-radius: 0px;
+        text-align: center;
+    }
+
+    .profile__title {
+        background-color: #222;
+        padding: 10px;
+        margin: 10px auto;
+        margin-bottom: 20px;
+    }
+            
+    .profile__container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 97%;
+        height: 100%;
+        position: relative;
+        margin: 20px auto;
+        background-color: #222;
+        border-radius: 120px 0px 120px 0px;
+    }
+
+    #f1 {
+        display: grid;
+        grid-column: 1/2;
+        position: absolute;
+        top: 12%;
+        left: 3%;
+        margin: 50px auto;
+        width: 60%;
+        height: 630px;
+        object-fit: cover;
+        filter: drop-shadow(0 0 8px #000);
+        border: 5px solid #111;
+        border-radius: 0;
+        transition: scale 0.6s ease-in-out;
+    }
+
+    #f1:hover {
+        filter: drop-shadow(0 0 10px #fff);
+        filter: drop-shadow(2px 2px 4px #111);
+        filter: drop-shadow(8px 8px 0px #000);
+        padding: 5px;
+        background-color: #fff;
+        outline: 5px solid #999;
+        scale: .90;
+        cursor: pointer;
+        opacity: 1;
+        border-radius: 120px 0px 120px 0px;
+    }
+
+    #f2 {
+        display: grid;
+        grid-column: 3/4;
+        position: absolute;
+        top: 18%;
+        left: 38%;
+        margin: 50px auto;
+        width: 60%;
+        height: 630px;
+        object-fit: cover;
+        filter: drop-shadow(0 0 8px #000);
+        border: 5px solid #111;
+        border-radius: 0;
+        transition: scale 0.6s ease-in-out;
+    }
+
+    #f2:hover {
+        filter: drop-shadow(0 0 10px #fff);
+        filter: drop-shadow(2px 2px 4px #111);
+        filter: drop-shadow(8px 8px 0px #000);
+        padding: 5px;
+        background-color: #fff;
+        outline: 5px solid #999;
+        scale: .90;
+        cursor: pointer;
+        opacity: 1;
+        border-radius: 120px 0px 120px 0px;
+    }
+
+    .profile__description {
+        display: grid;
+        grid-column: 1/4;
+        grid-row: 1;
+        background-color: #222;
+        border-radius: 10px;
+        padding: 10px 0;
+        margin: 20px auto;
+        width: 52%;
+    }
+
+    .profile__subtitle {
+        font-size: 2rem;
+        padding: 0;
+        margin: 0 auto; 
+        padding: 5px 0;
+        text-wrap: balance;
+    }
+
+    .profile__text {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        text-wrap: pretty;
+    }
+
+    #p1::first-letter {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }   
 }
 
 @media screen and (max-width: 768px) {
     
     .header {
-        height: 10vh;
+        min-height: 10vh;
         width: clamp(600px, 100%, 768px);
     }
 
@@ -321,36 +586,163 @@ footer p {
         flex-direction: column;
         gap: 3px;
     }
+
+    .profile {
+        min-height: 100vh;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 10px 0px;
+    }      
+
+    .profile__title, .profile__subtitle {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 3rem;
+        font-weight: 600;
+        text-shadow: 0 0 10px #000;
+        filter: drop-shadow(0 0 2px #fff);
+        font-style: oblique;
+        letter-spacing: 5px;
+        border-radius: 0px;
+        text-align: center;
+    }
+
+    .profile__title {
+        background-color: #222;
+        padding: 10px;
+        margin: 10px auto;
+        margin-bottom: 20px;
+    }
+            
+    .profile__container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 97%;
+        min-height: 100vh;
+        margin: 0 auto;
+        background-color: #222;
+        z-index: 1;
+        position: relative;
+        border-radius: 120px 0px 120px 0px;
+    }
+
+    #f1 {
+        display: flex;
+        position: static;
+        order: 1;
+        margin: 0px auto;
+        margin-top: 50px;
+        width: 40%;
+        height: 410px;
+        object-fit: cover;
+        filter: drop-shadow(0 0 8px #000);
+        border: 5px solid #111;
+        border-radius: 0;
+        transition: scale 0.6s ease-in-out;
+        z-index: 0;
+    }
+
+    #f1:hover {
+        filter: drop-shadow(0 0 10px #fff);
+        filter: drop-shadow(2px 2px 4px #111);
+        filter: drop-shadow(8px 8px 0px #000);
+        padding: 5px;
+        background-color: #fff;
+        outline: 5px solid #999;
+        scale: 1.1;
+        cursor: pointer;
+        opacity: 1;
+        border-radius: 120px 0px 120px 0px;
+    }
+
+    #f2 {
+        display: flex;
+        position: static;
+        order: 3;
+        margin: 0px auto;
+        margin-bottom: 60px;
+        width: 40%;
+        height: 410px;
+        object-fit: cover;
+        filter: drop-shadow(0 0 8px #000);
+        border: 5px solid #111;
+        border-radius: 0;
+        transition: scale 0.6s ease-in-out;
+    }
+
+    #f2:hover {
+        filter: drop-shadow(0 0 10px #fff);
+        filter: drop-shadow(2px 2px 4px #111);
+        filter: drop-shadow(8px 8px 0px #000);
+        padding: 5px;
+        background-color: #fff;
+        outline: 5px solid #999;
+        scale: 1.1;
+        cursor: pointer;
+        opacity: 1;
+        border-radius: 120px 0px 120px 0px;
+    }
+
+    .profile__description {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        order: 2;
+        background-color: #222;
+        border-radius: 10px;
+        padding: 5px 0px;
+        margin: 20px auto;
+        z-index: 0;
+        width: 95%;
+    }
+
+    .profile__subtitle {
+        font-size: 3rem;
+        padding: 0;
+        margin: 10px auto; 
+        padding: 5px 0;
+        text-wrap: balance;
+    }
+
+    .profile__text {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        text-wrap: pretty;
+    }
+
+    #p1::first-letter {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    body {
-        user-select: none;
-    }
-
+    
     .header {
-        height: 10vh;
+        min-height: 10vh;
         width: clamp(200px, 100%, 600px);
         position: static;
     }
 
     .header__logo-container {
         display: block;
-        width: clamp(70px, 100%, 80px);
+        width: clamp(80px, 100%, 85px);
         margin: auto;
         margin-left: 25px;
     }
 
     .header__logo-img {
-        width: 90%;
-        width: clamp(80%, 100%, 90%);
+        width: 100%;
+        width: clamp(80%, 90%, 85%);
         border: 3px solid #111;
     }
 
     .header__nav {
         width: auto;
         margin: auto;
-        padding: 0px;
+        padding: 10px;
     }
 
     .header__nav-list {
@@ -385,17 +777,16 @@ footer p {
         margin: 0;
         margin-bottom: 20px;
         padding: 10px 0px;
-        position: relative;
-    }
+    }      
 
     .profile__title, .profile__subtitle {
         font-family: 'Courier New', Courier, monospace;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 600;
         text-shadow: 0 0 10px #000;
         filter: drop-shadow(0 0 2px #fff);
         font-style: oblique;
-        letter-spacing: 8px;
+        letter-spacing: 4px;
         border-radius: 0px;
         text-align: center;
     }
@@ -404,53 +795,61 @@ footer p {
         background-color: #222;
         padding: 10px;
         margin: 10px auto;
+        margin-bottom: 20px;
     }
             
     .profile__container {
         display: flex;
         flex-direction: column;
-        width: 90%;
-        height: 100%;
+        gap: 10px;
+        width: 98%;
+        min-height: 100vh;
         margin: 0 auto;
+        background-color: #222;
+        z-index: 1;
+        position: relative;
+        border-radius: 120px 0px 120px 0px;
     }
 
     #f1 {
         display: flex;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin: 0 auto;
-        width: 450px;
-        height: 650px;
+        position: static;
+        order: 1;
+        margin: 0px auto;
+        margin-top: 50px;
+        width: 50%;
+        height: 35%;
         object-fit: cover;
-        filter: drop-shadow(0 0 20px #000);
+        filter: drop-shadow(0 0 8px #000);
         border: 5px solid #111;
         border-radius: 0;
         transition: scale 0.6s ease-in-out;
+        z-index: 0;
     }
 
     #f1:hover {
         filter: drop-shadow(0 0 10px #fff);
         filter: drop-shadow(2px 2px 4px #111);
-        filter: drop-shadow(10px 20px 30px #000);
+        filter: drop-shadow(8px 8px 0px #000);
         padding: 5px;
         background-color: #fff;
         outline: 5px solid #999;
-        scale: .90;
+        scale: 1.1;
         cursor: pointer;
         opacity: 1;
+        border-radius: 120px 0px 120px 0px;
     }
 
     #f2 {
         display: flex;
-        position: absolute;
-        top: 0;
-        left: 0;
+        position: static;
+        order: 3;
         margin: 0px auto;
-        width: 450px;
-        height: 450px;
+        margin-bottom: 60px;
+        width: 50%;
+        height: 35%;
         object-fit: cover;
-        filter: drop-shadow(0 0 20px #000);
+        filter: drop-shadow(0 0 8px #000);
         border: 5px solid #111;
         border-radius: 0;
         transition: scale 0.6s ease-in-out;
@@ -459,30 +858,32 @@ footer p {
     #f2:hover {
         filter: drop-shadow(0 0 10px #fff);
         filter: drop-shadow(2px 2px 4px #111);
-        filter: drop-shadow(10px 20px 30px #000);
+        filter: drop-shadow(8px 8px 0px #000);
         padding: 5px;
         background-color: #fff;
         outline: 5px solid #999;
-        scale: .90;
+        scale: 1.1;
         cursor: pointer;
         opacity: 1;
+        border-radius: 120px 0px 120px 0px;
     }
 
     .profile__description {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 0; 
+        position: static;
+        order: 2;
         background-color: #222;
         border-radius: 10px;
-        padding: 5px 10px;
+        padding: 5px;
         margin: 20px auto;
+        z-index: 0;
+        width: 95%;
     }
 
     .profile__subtitle {
-        font-size: 2.5rem;
         padding: 0;
-        margin: 0 auto; 
+        margin: 10px auto; 
         padding: 5px;
         text-wrap: balance;
     }
@@ -490,9 +891,9 @@ footer p {
     .profile__text {
         font-size: 1rem;
         padding: 0;
-        margin: 0 10px;
+        margin: 0 auto;
         text-align: center;
-        text-wrap: balance;
+        text-wrap: pretty;
     }
 
     #p1::first-letter {
@@ -504,7 +905,7 @@ footer p {
 @media screen and (max-width: 400px) {
     
     .header {
-        height: 10vh;
+        min-height: 10vh;
         width: clamp(100px, 100%, 400px);
         position: static;
     }
@@ -552,6 +953,70 @@ footer p {
         font-size: 1rem;
         flex-direction: column;
         gap: 2px;
+    }
+    
+    .profile {
+        min-height: 100vh;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 10px 0px;
+    }      
+
+    .profile__title, .profile__subtitle {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.7rem;
+        font-weight: 600;
+        text-shadow: 0 0 10px #000;
+        filter: drop-shadow(0 0 2px #fff);
+        font-style: oblique;
+        letter-spacing: 2px;
+        border-radius: 0px;
+        text-align: center;
+    }
+
+    .profile__title {
+        background-color: #222;
+        padding: 10px;
+        margin: 10px auto;
+        margin-bottom: 20px;
+    }
+
+    .profile__subtitle {
+        padding: 0;
+        margin: 10px auto; 
+        padding: 5px;
+        text-wrap: balance;
+    }
+
+    .profile__container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 95%;
+        min-height: 100vh;
+        margin: 0 auto;
+        background-color: #222;
+        z-index: 1;
+        position: relative;
+        border-radius: 120px 0px 120px 0px;
+    }
+    
+    #f1 {
+        width: 50%;
+        height: 65%;
+    }
+       
+    #f2 {
+        width: 50%;
+        height: 65%;
+    }
+
+    .profile__text {
+        font-size: 1rem;
+        padding: 5px;
+        margin: 0 auto;
+        text-align: center;
+        text-wrap: pretty;
     }
     
     footer {
