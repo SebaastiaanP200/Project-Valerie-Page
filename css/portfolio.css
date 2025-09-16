@@ -345,7 +345,7 @@ footer p {
 
     }
 
-    ..portfolio__container {
+    .portfolio__container {
         display: flex;
         flex-direction: column;
         height: 100%;
