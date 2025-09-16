@@ -5,7 +5,7 @@ const containerXV = document.querySelector(".portfolio__container");
 const getImgXV = async () => {
     try {
         const res = await axios.get("../img.json");
-        const data = res.data[3];
+        const data = res.data[4];
         const portfolioContainerXV = document.createDocumentFragment();
 
     for (let i = 0; i < data.portfolio_xv.length; i++) {
