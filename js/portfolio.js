@@ -1,6 +1,6 @@
 /* PORTFOLIO */
 
-const containerOpNf = document.querySelector(".grid__container");
+const containerOpNf = document.querySelector(".portfolio__container");
 
 const getOpNf = async () => {
     try {
@@ -25,7 +25,7 @@ const getOpNf = async () => {
             }).join("");
             
             const div = document.createElement("DIV");
-            div.classList.add("slider-box");
+            div.classList.add("portfolio__slider");
             div.innerHTML = 
                             `<a href="${link}" class="link__portfolio">Open Portfolio</a>
                             <ul>${ulContainer}</ul>`;
