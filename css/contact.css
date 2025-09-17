@@ -376,15 +376,7 @@ footer p {
     }
 
     .header__logo-container {
-        display: block;
-        width: clamp(100px, 100%, 120px);
-        margin: auto;
-        margin-left: 15px;
-    }
-
-    .header__logo-img {
-        width: 90%;
-        border: 2px solid #111;
+        display: none;
     }
 
     .header__nav {
@@ -410,12 +402,12 @@ footer p {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .link {
         display: flex;
-        font-size: 1rem;
+        font-size: .9rem;
         flex-direction: column;
         gap: 2px;
     }

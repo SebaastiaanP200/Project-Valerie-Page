@@ -1,30 +1,29 @@
-/* CAROUSEL */
 const carouselContainer = document.querySelector(".carousel__container");
 
 const getImgC = async () => {
     try {
-    const res = await axios.get("img.json");
-    const data = res.data[0];
-    const containerImgHTML = document.createDocumentFragment();
-    for(let i = 0; i < 4; i++) {
-        const image = data.carousel[i];
-        if (!image) break;
-        const img = document.createElement("IMG");
-        img.alt = image.titulo;
-        img.src = image.url;
-        img.loading = "lazy";
-        img.classList.add("image")
-        containerImgHTML.appendChild(img);
+        const res = await axios.get("img.json");
+        const data = res.data[0];
+        const containerImgHTML = document.createDocumentFragment();
+        for (let i = 0; i < 4; i++) {
+            const image = data.carousel[i];
+            if (!image) break;
+            const img = document.createElement("IMG");
+            img.alt = image.titulo;
+            img.src = image.url;
+            img.loading = "lazy";
+            img.classList.add("image");
+            containerImgHTML.appendChild(img);
+        }
+        carouselContainer.appendChild(containerImgHTML);
+    } catch (e) {
+        console.error("Error durante la carga: ", e);
     }
-    carouselContainer.appendChild(containerImgHTML);
-}catch(e) {console.error("Error durante la carga: ");}
-}
+};
 
 getImgC();
 
-
-/* TESTIMONIALS */
-const container = document.querySelector(".flex");
+const container = document.querySelector(".flex__wrapper");
 
 const getImgT = async () => {
     try {
@@ -49,9 +48,7 @@ const getImgT = async () => {
         testimonyContainer.appendChild(div);
     }
     container.appendChild(testimonyContainer);
-    } catch (e) {
-        console.error(e);
-    }
+    } catch (e) {console.error("Error durante la carga: ", e);}
 };
 
 getImgT();

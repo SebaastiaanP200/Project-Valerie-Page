@@ -16,10 +16,11 @@ const getImgPF = async () => {
         img.src = image;
         img.alt = name;
         img.id = id;
+        img.loading = "lazy";
         profileContainer.appendChild(img);
         }
         containerIMG.appendChild(profileContainer);
-    } catch (e) {console.error("Error durante la carga: ");}
+    } catch (e) {console.error("Error durante la carga: ", e);}
 };
 
 getImgPF();
@@ -42,7 +43,7 @@ const getTxtP = async () => {
         profileContainerTxt.appendChild(div);
     }
     containerTxtP.appendChild(profileContainerTxt);
-    } catch (e) {console.error("Error durante la carga: ");}
+    } catch (e) {console.error("Error durante la carga: ", e);}
 };
 
 getTxtP();

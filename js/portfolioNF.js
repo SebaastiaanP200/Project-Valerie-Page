@@ -1,11 +1,9 @@
-/* NEWBORN & FAMILY */
-
 const containerNF = document.querySelector(".portfolio__container");
 
 const getImgNF = async () => {
     try {
         const res = await axios.get("../img.json");
-        const data = res.data[3];
+        const data = res.data[6];
         const portfolioContainerNF = document.createDocumentFragment();
 
     for (let i = 0; i < data.portfolio_nf.length; i++) {
@@ -20,7 +18,7 @@ const getImgNF = async () => {
         portfolioContainerNF.appendChild(imgNF);
     }
     containerNF.appendChild(portfolioContainerNF);
-    } catch (e) {console.error("Error durante la carga: ");}
+    } catch (e) {console.error("Error durante la carga: ", e);}
 };
 
 getImgNF();

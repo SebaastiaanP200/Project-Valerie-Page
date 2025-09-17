@@ -911,17 +911,9 @@ footer p {
     }
 
     .header__logo-container {
-        display: block;
-        width: clamp(100px, 100%, 120px);
-        margin: auto;
-        margin-left: 15px;
+        display: none;
     }
-
-    .header__logo-img {
-        width: 80%;
-        border: 2px solid #111;
-    }
-
+    
     .header__nav {
         width: auto;
         margin: auto;
@@ -945,12 +937,12 @@ footer p {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .link {
         display: flex;
-        font-size: 1rem;
+        font-size: .9rem;
         flex-direction: column;
         gap: 2px;
     }

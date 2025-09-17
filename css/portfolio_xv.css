@@ -340,8 +340,6 @@ footer p {
         font-size: 1rem;
         filter: drop-shadow(0 0 5px #aaa);
     }
-}
-@container main (max-width:600px) {
 
     .portfolio__title {
         font-size: 2.2rem;
@@ -395,10 +393,7 @@ footer p {
     .portfolio__images:hover::before {
         opacity: 1;
     }
-}
 
-@container footer (max-width:600px) {
-    
     footer {
         padding: 20px 0;
         text-align: center;
@@ -410,6 +405,67 @@ footer p {
 
     footer p {
         font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    
+    .header {
+        min-height: 10vh;
+        width: clamp(100px, 100%, 400px);
+        position: static;
+    }
+
+    .header__logo-container {
+        display: none;
+    }
+
+    .header__nav {
+        width: auto;
+        margin: auto;
+        padding: 0px;
+    }
+
+    .header__nav-list {
+        display: flex;
+        gap: 20px;
+        width: auto;
+        padding: 5px;
+    }
+
+    .header__nav-item:active {
+        outline: 2px solid #fff;
+        border-radius: 5px;
+        filter: drop-shadow(0 0 4px #000);
+    }
+
+    .link>span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+    }
+
+    .link {
+        display: flex;
+        font-size: .9rem;
+        flex-direction: column;
+        gap: 2px;
+    }
+    
+    footer {
+        margin-top: 0;
+        padding: 10px 0;
+        font-size: .85rem;
+    }
+
+    .button {
+        width: 5rem;
+        height: 2.5rem;
+    }
+
+    .button:hover {
+        opacity: .9;
     }
 }
 

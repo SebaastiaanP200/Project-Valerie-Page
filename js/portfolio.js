@@ -1,8 +1,6 @@
-/* PORTFOLIO */
+const containerOp = document.querySelector(".portfolio__container");
 
-const containerOpNf = document.querySelector(".portfolio__container");
-
-const getOpNf = async () => {
+const getOp = async () => {
     try {
         const res = await axios.get("../img.json");
         const data = res.data;
@@ -21,23 +19,16 @@ const getOpNf = async () => {
                 const src = imageObject.url;
                 const id = imageObject.id;
                 
-                return `<li><img src="${src}" alt="${alt}" id="${id}"></li>`
+                return `<li><img src="${src}" alt="${alt}" id="${id}" loading="lazy"></li>`
             }).join("");
             
             const div = document.createElement("DIV");
             div.classList.add("portfolio__slider");
-            div.innerHTML = 
-                            `<a href="${link}" class="link__portfolio">Open Portfolio</a>
-                            <ul>${ulContainer}</ul>`;
+            div.innerHTML = `<a href="${link}" class="link__portfolio">Open Portfolio</a><ul>${ulContainer}</ul>`;
             oPfragment.appendChild(div);
         }
-        containerOpNf.appendChild(oPfragment);
+        containerOp.appendChild(oPfragment);
     } catch (e) {console.error("Error durante la carga: ", e);}
 };
 
-getOpNf();
-
-
-
-
-
+getOp();

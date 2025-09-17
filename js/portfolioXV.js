@@ -1,11 +1,9 @@
-/* XV - BIRTHDAY */
-
 const containerXV = document.querySelector(".portfolio__container");
 
 const getImgXV = async () => {
     try {
         const res = await axios.get("../img.json");
-        const data = res.data[4];
+        const data = res.data[7];
         const portfolioContainerXV = document.createDocumentFragment();
 
     for (let i = 0; i < data.portfolio_xv.length; i++) {
@@ -20,7 +18,7 @@ const getImgXV = async () => {
         portfolioContainerXV.appendChild(imgXV);
     }
     containerXV.appendChild(portfolioContainerXV);
-    } catch (e) {console.error("Error durante la carga: ");}
+    } catch (e) {console.error("Error durante la carga: ", e);}
 };
 
 getImgXV();

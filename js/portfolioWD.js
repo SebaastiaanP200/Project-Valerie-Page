@@ -1,11 +1,9 @@
-/* WEDDINGS */
-
 const containerWD = document.querySelector(".portfolio__container");
 
 const getImgWD = async () => {
     try {
         const res = await axios.get("../img.json");
-        const data = res.data[5];
+        const data = res.data[8];
         const portfolioContainerWD = document.createDocumentFragment();
 
     for (let i = 0; i < data.portfolio_wd.length; i++) {
@@ -20,7 +18,7 @@ const getImgWD = async () => {
         portfolioContainerWD.appendChild(imgWD);
     }
     containerWD.appendChild(portfolioContainerWD);
-    } catch (e) {console.error("Error durante la carga: ");}
+    } catch (e) {console.error("Error durante la carga: ", e);}
 };
 
 getImgWD();
