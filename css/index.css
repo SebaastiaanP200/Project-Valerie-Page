@@ -388,19 +388,25 @@ footer p {
 @media screen and (max-width: 768px) {
     
     .header {
-        height: 10vh;
+        min-height: 10vh;
         width: clamp(600px, 100%, 768px);
     }
 
     .header__logo-container {
         display: block;
-        width: clamp(60px, 90%, 70px);
-        margin: auto;
-        margin-left: 30px;
+        margin-left: 40px;
     }
 
     .header__logo-img {
         border: 3px solid #111;
+    }
+
+    .header__nav-list {
+        margin-right: 0;
+        display: flex;
+        gap: 10px 0px;
+        width: auto;
+        height: 100%;
     }
 
     .link>span {
@@ -485,22 +491,19 @@ footer p {
 @media screen and (max-width: 600px) {
     
     .header {
-        height: 10vh;
+        min-height: 10vh;
         width: clamp(200px, 100%, 600px);
         position: static;
     }
 
     .header__logo-container {
         display: block;
-        width: clamp(70px, 100%, 80px);
-        margin: auto;
         margin-left: 25px;
     }
-
+    
     .header__logo-img {
-        width: 90%;
-        width: clamp(80%, 100%, 90%);
-        border: 3px solid #111;
+        width: 80%;
+        margin-left: 0 auto;
     }
 
     .header__nav {
@@ -512,6 +515,7 @@ footer p {
     .header__nav-list {
         display: flex;
         gap: 10px 30px;
+        margin-right: 20px;
         width: auto;
         height: 100%;
     }
@@ -614,18 +618,24 @@ footer p {
 @media screen and (max-width: 400px) {
     
     .header {
-        height: 10vh;
+        min-height: 10vh;
         width: clamp(100px, 100%, 400px);
         position: static;
     }
 
     .header__logo-container {
-        display: none;
+        display: block;
+    }
+
+    .header__logo-img {
+        width: 70%;
+        margin-left: 2px;
     }
 
     .header__nav {
         width: auto;
-        margin: auto;
+        margin: 0 auto;
+        margin-right: 15px;
         padding: 0px;
     }
 
@@ -661,7 +671,7 @@ footer p {
     }
 
     h1 {
-        margin: 5px auto;
+        margin: 20px auto;
         padding: 10px;
         font-size: 1.7rem;
         text-wrap: balance;

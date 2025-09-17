@@ -317,7 +317,7 @@ footer p {
         height: 100%;
         position: relative;
         margin: 0 auto;
-        border-radius: 120px 0px 120px 0px;
+        border-radius: 100px 0px 100px 0px;
         background-color: #222;
     }
 
@@ -347,7 +347,7 @@ footer p {
         scale: .95;
         cursor: pointer;
         opacity: 1;
-        border-radius: 120px 0px 120px 0px;
+        border-radius: 100px 0px 100px 0px;
     }
 
     #f2 {
@@ -376,7 +376,7 @@ footer p {
         scale: .95;
         cursor: pointer;
         opacity: 1;
-        border-radius: 120px 0px 120px 0px;
+        border-radius: 100px 0px 100px 0px;
     }
 
     .profile__description {
@@ -465,7 +465,7 @@ footer p {
         position: relative;
         margin: 20px auto;
         background-color: #222;
-        border-radius: 120px 0px 120px 0px;
+        border-radius: 100px 0px 100px 0px;
     }
 
     #f1 {
@@ -494,7 +494,7 @@ footer p {
         scale: .90;
         cursor: pointer;
         opacity: 1;
-        border-radius: 120px 0px 120px 0px;
+        border-radius: 100px 0px 100px 0px;
     }
 
     #f2 {
@@ -523,7 +523,7 @@ footer p {
         scale: .90;
         cursor: pointer;
         opacity: 1;
-        border-radius: 120px 0px 120px 0px;
+        border-radius: 100px 0px 100px 0px;
     }
 
     .profile__description {
@@ -623,7 +623,7 @@ footer p {
         background-color: #222;
         z-index: 1;
         position: relative;
-        border-radius: 120px 0px 120px 0px;
+        border-radius: 100px 0px 100px 0px;
     }
 
     #f1 {
@@ -652,7 +652,7 @@ footer p {
         scale: 1.1;
         cursor: pointer;
         opacity: 1;
-        border-radius: 120px 0px 120px 0px;
+        border-radius: 100px 0px 100px 0px;
     }
 
     #f2 {
@@ -680,7 +680,7 @@ footer p {
         scale: 1.1;
         cursor: pointer;
         opacity: 1;
-        border-radius: 120px 0px 120px 0px;
+        border-radius: 100px 0px 100px 0px;
     }
 
     .profile__description {
@@ -728,26 +728,24 @@ footer p {
 
     .header__logo-container {
         display: block;
-        width: clamp(80px, 100%, 85px);
-        margin: auto;
         margin-left: 25px;
     }
-
+    
     .header__logo-img {
-        width: 100%;
-        width: clamp(80%, 90%, 85%);
-        border: 3px solid #111;
+        width: 90%;
+        margin-left: 0 auto;
     }
 
     .header__nav {
         width: auto;
         margin: auto;
-        padding: 10px;
+        padding: 0px;
     }
 
     .header__nav-list {
         display: flex;
         gap: 10px 30px;
+        margin-right: 20px;
         width: auto;
         height: 100%;
     }
@@ -808,7 +806,7 @@ footer p {
         background-color: #222;
         z-index: 1;
         position: relative;
-        border-radius: 120px 0px 120px 0px;
+        border-radius: 100px 0px 100px 0px;
     }
 
     #f1 {
@@ -837,7 +835,7 @@ footer p {
         scale: 1.1;
         cursor: pointer;
         opacity: 1;
-        border-radius: 120px 0px 120px 0px;
+        border-radius: 100px 0px 100px 0px;
     }
 
     #f2 {
@@ -865,7 +863,7 @@ footer p {
         scale: 1.1;
         cursor: pointer;
         opacity: 1;
-        border-radius: 120px 0px 120px 0px;
+        border-radius: 100px 0px 100px 0px;
     }
 
     .profile__description {
@@ -873,10 +871,10 @@ footer p {
         flex-direction: column;
         position: static;
         order: 2;
-        background-color: #222;
+        background-color: #111;
         border-radius: 10px;
         padding: 5px;
-        margin: 20px auto;
+        margin: 30px auto;
         z-index: 0;
         width: 95%;
     }
@@ -911,12 +909,18 @@ footer p {
     }
 
     .header__logo-container {
-        display: none;
+        display: block;
     }
-    
+
+    .header__logo-img {
+        width: 70%;
+        margin-left: 2px;
+    }
+
     .header__nav {
         width: auto;
-        margin: auto;
+        margin: 0 auto;
+        margin-right: 15px;
         padding: 0px;
     }
 
@@ -975,7 +979,7 @@ footer p {
 
     .profile__subtitle {
         padding: 0;
-        margin: 10px auto; 
+        margin: 0 auto; 
         padding: 5px;
         text-wrap: balance;
     }
@@ -990,17 +994,25 @@ footer p {
         background-color: #222;
         z-index: 1;
         position: relative;
-        border-radius: 120px 0px 120px 0px;
+        border-radius: 100px 0px 100px 0px;
     }
     
     #f1 {
         width: 50%;
         height: 65%;
     }
-       
+    
+    #f1:hover{
+        border-radius: 100px 0px 100px 0px;
+    }
+
     #f2 {
         width: 50%;
         height: 65%;
+    }
+
+    #f2:hover {
+        border-radius: 100px 0px 100px 0px;
     }
 
     .profile__text {
@@ -1009,6 +1021,8 @@ footer p {
         margin: 0 auto;
         text-align: center;
         text-wrap: pretty;
+        background-color: #111;
+
     }
     
     footer {
