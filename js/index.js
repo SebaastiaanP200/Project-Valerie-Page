@@ -34,17 +34,17 @@ const getImgT = async () => {
 
     for (let i = 0; i < data.testimony.length; i++) {
         const id = data.testimony[i].id;
-        const nombre = data.testimony[i].nombre;
+        const name = data.testimony[i].name;
         const imagen = data.testimony[i].url;
-        const descripcion = data.testimony[i].descripcion;
+        const description = data.testimony[i].description;
 
         const div = document.createElement("DIV");
         div.classList.add("testimony__container");
         div.id = `testimony${i + 1}`;
         div.innerHTML = `
-                        <h3 class="name__testimony">${nombre}</h3>
+                        <h3 class="name__testimony">${name}</h3>
                         <img src="${imagen}" alt="Testimony ${id}" id="testimony-${id}" loading="lazy">
-                        <p class="description__testimony" >${descripcion}</p>`;
+                        <p class="description__testimony" >${description}</p>`;
       
         testimonyContainer.appendChild(div);
     }
