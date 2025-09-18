@@ -127,20 +127,21 @@ body {
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    width: 97%;
+    width: 98%;
     height: 100%;
-    margin: 20px auto;
+    margin: auto;
     padding: 20px;
-    gap: 20px;
+    gap: auto;
     background-color: #222;
     border-radius: 100px 0 100px 0;
+    justify-content: center;
 }
 
 .portfolio__slider {
     position: relative;
     width: 90%;
     height: 60%;
-    margin: 10px auto;
+    margin: auto;
     overflow: hidden;
     border-radius: 50%;
     border: 10px solid #444;
@@ -155,8 +156,8 @@ body {
 .portfolio__slider ul {
     display: flex;
     width: 400%;
+    height: auto;
     animation: slide 12s infinite alternate-reverse ease-in-out both;
-       
 }
 
 .portfolio__slider li {
