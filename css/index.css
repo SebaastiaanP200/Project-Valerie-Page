@@ -498,10 +498,11 @@ footer p {
     .header__logo-container {
         display: block;
         margin-left: 25px;
+        width: clamp(80px, 70%, 80px);
     }
-    
+        
     .header__logo-img {
-        width: 80%;
+        width: 90%;
         margin-left: 0 auto;
     }
 
@@ -514,7 +515,7 @@ footer p {
     .header__nav-list {
         display: flex;
         gap: 10px 30px;
-        margin-right: 20px;
+        margin-right: 0px;
         width: auto;
         height: 100%;
     }

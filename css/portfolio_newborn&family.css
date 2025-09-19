@@ -35,7 +35,7 @@ body {
     top: 0;
     z-index: 10;
     align-items: center;
-    height: 90px;
+    min-height: 90px;
     width: 100%;
     animation: header-movement forwards;
     animation-timeline: scroll();
@@ -46,7 +46,7 @@ body {
     display: block;
     position: relative;
     z-index: 10;
-    width: clamp(90px, 90%, 100px);
+    width: clamp(90px, 80%, 100px);
     margin: auto 30px;
     filter: contrast(1.5);
 }
@@ -56,10 +56,9 @@ body {
     inset: 0;
     margin: auto;
     padding: 0;
-    max-width: 90%;
-    width: clamp(70px, 50%, 200px);
+    width: clamp(70px, 80%, 200px);
     border-radius: 50%;
-    border: 5px solid #111;
+    border: 3px solid #111;
     filter: drop-shadow(0 0 4px #111) contrast() invert();
 }
 
@@ -77,7 +76,7 @@ body {
     gap: 10px;
     width: 100%;
     height: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -91,13 +90,13 @@ body {
     filter: drop-shadow(0 0 4px #000);
 }
 
-.link > span {
+.link>span {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2.4rem;
     filter: drop-shadow(0 0 1px #222);
-}    
+}
 
 .link {
     display: flex;
@@ -409,10 +408,11 @@ footer p {
     .header__logo-container {
         display: block;
         margin-left: 25px;
+        width: clamp(80px, 70%, 80px);
     }
-    
+        
     .header__logo-img {
-        width: 80%;
+        width: 90%;
         margin-left: 0 auto;
     }
 
@@ -425,7 +425,7 @@ footer p {
     .header__nav-list {
         display: flex;
         gap: 10px 30px;
-        margin-right: 20px;
+        margin-right: 0px;
         width: auto;
         height: 100%;
     }
