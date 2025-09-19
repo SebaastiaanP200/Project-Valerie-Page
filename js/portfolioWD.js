@@ -9,11 +9,13 @@ const getImgWD = async () => {
     for (let i = 0; i < data.portfolio_wd.length; i++) {
         const id = data.portfolio_wd[i].id;
         const imagen = data.portfolio_wd[i].url;
+        const name = data.portfolio_wd[i].name;
 
         const imgWD = document.createElement("IMG");
         imgWD.classList.add("portfolio__images");
-        imgWD.src= imagen;
-        imgWD.alt= id;
+        imgWD.src = imagen;
+        imgWD.alt = name;
+        imgWD.id = id;
         imgWD.loading = "lazy";
         portfolioContainerWD.appendChild(imgWD);
     }

@@ -129,9 +129,9 @@ body {
     grid-template-columns: repeat(3,1fr);
     width: 98%;
     height: 100%;
-    margin: auto;
-    padding: 20px;
-    gap: auto;
+    margin: 20px auto;
+    padding: 0;
+    gap: 0;
     background-color: #222;
     border-radius: 100px 0 100px 0;
     justify-content: center;
@@ -139,7 +139,7 @@ body {
 
 .portfolio__slider {
     position: relative;
-    width: 90%;
+    width: 400px;
     height: 60%;
     margin: auto;
     overflow: hidden;
@@ -174,10 +174,11 @@ body {
     inset: 0;
     color: transparent;
     text-decoration: none;
+    text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 800;
-    transition: scale 1s;
+    transition: scale .9s;
 }
 
 .link__portfolio:hover {
@@ -238,6 +239,7 @@ footer p {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1366px) {
+    
     .portfolio__title {
         font-size: 3rem;
         letter-spacing: 5px;
@@ -250,19 +252,19 @@ footer p {
         height: 100%;
         margin: 20px auto;
         padding: 20px;
-        gap: 20px;
+        gap: 0px;
         background-color: #222;
         border-radius: 100px 0 100px 0;
     }
 
     .portfolio__slider {
         position: relative;
-        width: 100%;
+        width: 300px;
         height: 60%;
-        margin: 10px auto;
+        margin: auto;
         overflow: hidden;
         border-radius: 50%;
-        border: 10px solid #444;
+        border: 5px solid #444;
         filter: drop-shadow(3px 3px 0px #000);
     }
 
@@ -273,14 +275,14 @@ footer p {
     
     .link__portfolio {
         text-align: center;
-        font-size: 2.6rem;
+        font-size: 1.8rem;
         font-weight: 800;
     }
 
     .link__portfolio:hover {
         filter: drop-shadow(2px 2px 40px #111);
-        scale: 1.15;
-        margin-bottom: 10px;
+        scale: 1.1;
+        margin-bottom: 0px;
     }
 
     .portfolio__slider img {
@@ -291,6 +293,7 @@ footer p {
 }
 
 @media screen and (max-width: 1024px) {
+    
     .header {
         min-height: 10vh;
         width: clamp(769px, 100%, auto);
@@ -327,12 +330,12 @@ footer p {
 
     .portfolio__slider {
         position: relative;
-        width: 100%;
+        width: auto;
         height: 60%;
-        margin: 10px auto;
+        margin: auto;
         overflow: hidden;
         border-radius: 50%;
-        border: 10px solid #444;
+        border: 5px solid #444;
         filter: drop-shadow(3px 3px 0px #000);
     }
 
@@ -343,14 +346,14 @@ footer p {
     
     .link__portfolio {
         text-align: center;
-        font-size: 2.6rem;
+        font-size: 1.5rem;
         font-weight: 800;
     }
 
     .link__portfolio:hover {
         filter: drop-shadow(2px 2px 40px #111);
-        scale: 1.15;
-        margin-bottom: 10px;
+        scale: 1.1;
+        margin-bottom: 0px;
     }
 
     .portfolio__slider img {
@@ -429,19 +432,19 @@ footer p {
     
     .link__portfolio {
         text-align: center;
-        font-size: 2.6rem;
+        font-size: 2.3rem;
         font-weight: 800;
     }
 
     .link__portfolio:hover {
         filter: drop-shadow(2px 2px 40px #111);
-        scale: 1.15;
-        margin-bottom: 10px;
+        scale: 1.1;
+        margin-bottom: 0px;
     }
 
     .portfolio__slider img {
         width: 110%;
-        height: 66%;
+        height: 80%;
         object-fit: cover;
     }
 }
@@ -544,20 +547,20 @@ footer p {
     }
 
     .link__portfolio {
-        font-size: 2.5rem;
-        font-weight: 700;
+        font-size: 2.3rem;
+        font-weight: 800;
         text-align: center;
     }
 
     .link__portfolio:hover {
         filter: drop-shadow(2px 2px 40px #111);
-        scale: 1.15;
-        margin-bottom: 10px;
+        scale: 1.1;
+        margin-bottom: 0px;
     }
 
     .portfolio__slider img {
         width: 110%;
-        height: 66%;
+        height: 86%;
     }
 }
 

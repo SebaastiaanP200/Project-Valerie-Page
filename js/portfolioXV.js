@@ -9,11 +9,13 @@ const getImgXV = async () => {
     for (let i = 0; i < data.portfolio_xv.length; i++) {
         const id = data.portfolio_xv[i].id;
         const imagen = data.portfolio_xv[i].url;
-
+        const name = data.portfolio_xv[i].name;
+        
         const imgXV = document.createElement("IMG");
         imgXV.classList.add("portfolio__images");
-        imgXV.src= imagen;
-        imgXV.alt= id;
+        imgXV.src = imagen;
+        imgXV.alt = name;
+        imgXV.id = id;
         imgXV.loading = "lazy";
         portfolioContainerXV.appendChild(imgXV);
     }
