@@ -1,16 +1,5 @@
 /* ENLACES */
 
-
-/* CAROUSEL */
-
-
-
-
-/* TESTIMONIALS */
-
-
-
-
 /* PORTFOLIONF */
 
 
