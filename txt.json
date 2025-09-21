@@ -1,30 +1,22 @@
 [
-  {
-    "profile": [
-      {
-        "id": "p1",
-        "description": "Soy la cara detrás de las hermosas historias que capturo día a día. Tengo 31 años, soy mamá de una bella niña y además fotógrafa, hace más de 10 años."
-      },
-      {
-        "description": "<strong>Mi camino por esta mágica profesión comenzó cuando empecé a ver el mundo en imágenes, las imágenes en historias y estas en momentos por ser retratados</strong>. Y ahí estaba yo, dispuesta a cumplir los sueños de mis clientes."
-      },
-      {
-        "description": "Día a día me perfecciono para cumplir sus expectativas y deseos, poniéndole el corazón a cada sesión, mi ojo entrenado y la creatividad a flor de piel. Pongo a disposición de mis clientes toda mi experiencia para realizar las fotos más emotivas y bellas, <strong>cada persona que pasa por mi lente, deja un emocionante relato marcado</strong>."
-      },
-      {
-        "description": "Mi estilo combina lo documental y lo artístico con un enfoque que captura emociones y personalidades auténticas."
-      },
-      {
-        "description": "Mi trabajo se basa en la <strong>conexión real</strong> y la <strong>narrativa honesta</strong>. Me atraen los momentos intermedios: ese <strong>caos</strong>, esa <strong>emoción</strong> y esa <strong>alegría</strong> que hacen de un día algo inolvidable. Te ayudaré a sentirte como tú mismo frente a la cámara, para que tus fotos reflejen la energía, el movimiento y el significado del momento."
-      },
-      {
-        "description": "Me encanta documentar cualquier persona que celebre algo especial, grande o pequeño."
-      },
-      {
-        "description": "¿Mi objetivo? Darte fotos que se sientan como recuerdos: <strong>auténticas, conmovedoras y tan hermosas</strong> que dentro de unos años se vean como lo son hoy."
-      },{
-        "description":  "De esas que volverás una y otra vez."
-      }
-    ]
-  }
+    {
+        "profile": [
+            { "id": "p1", "description": "Soy la cara detrás de las hermosas historias que capturo día a día. Tengo 31 años, soy mamá de una bella niña y además fotógrafa, hace más de 10 años." },
+            { "description": "<strong>Mi camino por esta mágica profesión comenzó cuando empecé a ver el mundo en imágenes, las imágenes en historias y estas en momentos por ser retratados</strong>. Y ahí estaba yo, dispuesta a cumplir los sueños de mis clientes." },
+            { "description": "Día a día me perfecciono para cumplir sus expectativas y deseos, poniéndole el corazón a cada sesión, mi ojo entrenado y la creatividad a flor de piel. Pongo a disposición de mis clientes toda mi experiencia para realizar las fotos más emotivas y bellas, <strong>cada persona que pasa por mi lente, deja un emocionante relato marcado</strong>." },
+            { "description": "Mi estilo combina lo documental y lo artístico con un enfoque que captura emociones y personalidades auténticas." },
+            { "description": "Mi trabajo se basa en la <strong>conexión real</strong> y la <strong>narrativa honesta</strong>. Me atraen los momentos intermedios: ese <strong>caos</strong>, esa <strong>emoción</strong> y esa <strong>alegría</strong> que hacen de un día algo inolvidable. Te ayudaré a sentirte como tú mismo frente a la cámara, para que tus fotos reflejen la energía, el movimiento y el significado del momento." },
+            { "description": "Me encanta documentar cualquier persona que celebre algo especial, grande o pequeño." },
+            { "description": "¿Mi objetivo? Darte fotos que se sientan como recuerdos: <strong>auténticas, conmovedoras y tan hermosas</strong> que dentro de unos años se vean como lo son hoy." },
+            { "description": "De esas que volverás una y otra vez." }
+        ]
+    },
+    {
+        "disclaimer": [
+            { "disclaimer": "TOTAL CON <strong>10%</strong> DE DESCUENTO." },
+            { "disclaimer": "<strong>50%</strong> PARA CONGELAR Y <strong>50%</strong> A ACORDAR." },
+            { "disclaimer": "EN CUOTAS CON <strong>10%</strong> DE RECARGO POR MES VENCIDO." },
+            { "disclaimer": "<strong>EL TOTAL DEL SERVICIO DEBE SER CANCELADO ANTES DEL EVENTO.</strong>" }
+        ]
+    }
 ]
