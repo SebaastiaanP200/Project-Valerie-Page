@@ -2,7 +2,7 @@ const carouselContainer = document.querySelector(".carousel__container");
 
 const getImgC = async () => {
     try {
-        const res = await axios.get("img.json");
+        const res = await axios.get("./img.json");
         const data = res.data[0];
         const containerImgHTML = document.createDocumentFragment();
         for (let i = 0; i < 4; i++) {
@@ -27,7 +27,7 @@ const container = document.querySelector(".flex__wrapper");
 
 const getImgT = async () => {
     try {
-        const res = await axios.get("img.json");
+        const res = await axios.get("./img.json");
         const data = res.data[1];
         const testimonyContainer = document.createDocumentFragment();
 

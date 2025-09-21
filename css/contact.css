@@ -188,13 +188,24 @@ label {
 }
 
 .disclaimer {
-    font-size: 1rem;
-    padding: 10px 20px;
-    margin: 0;
-    border-left: 3px solid #fff;
-    border-bottom: 3px solid #fff;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin: 0px;
     text-shadow: 0 0 15px #000, 0 0 2px #fff;
-    line-height: 1.5;
+    border-left: 2px solid #fff;
+}
+
+.disclaimer__container {
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+.disclaimer__text {
+    font-size: 1.1rem;
+    padding: 10px;
+    margin: 0px;
+    text-shadow: 0 0 15px #000, 0 0 2px #fff;
+    list-style: none;
 }
 
 fieldset {

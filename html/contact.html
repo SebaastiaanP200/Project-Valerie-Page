@@ -6,9 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="/css/fonts.css">
     <link rel="stylesheet" href="/css/contact.css">
-    <link href="index.html">
-    <link href="/html/profile.html">
-    <link href="/html/portfolio.html">
+
     <title>VC-Photograph</title>
 </head>
 <body>
@@ -54,38 +52,49 @@
                 <legend>INFORMACIÓN BÁSICA</legend>
                 <div class="form__input">
                     <label for="nombre" class="etiqueta">Nombre</label>
-                    <input type="text" placeholder="John" id="nombre" required="required">
+                    <input type="text" placeholder="John" id="nombre" required aria-required="true">
                 </div>
                 <div class="form__input">
                     <label for="apellido" class="etiqueta">Apellido</label>
-                    <input type="text" placeholder="Doe" id="apellido" required="required">
+                    <input type="text" placeholder="Doe" id="apellido" required aria-required="true">
                 </div>
                 <div class="form__input">
-                    <label class="etiqueta">Email</label>
-                        <input type="email" placeholder="abc123@gmail.com" required="required">
+                    <label for="email" class="etiqueta">Email</label>
+                        <input type="email" placeholder="abc123@gmail.com" id="email" required aria-required="true">
                 </div>
                 <div class="form__input">
-                    <label class="etiqueta">Teléfono</label>
-                    <input type="tel" placeholder="+54 3212 548321" required="required">
+                    <label for="telefono" class="etiqueta">Teléfono</label>
+                    <input type="tel" placeholder="+54 3212 548321" id="telefono" required aria-required="true">
                 </div>
             </fieldset>
 
             <!--DETALLES DEL EVENTO A CONTRATAR-->
             <fieldset>
                 <legend>DETALLES DEL EVENTO</legend>
+
                 <div class="form__input">
-                    <label class="etiqueta">Tipo de evento
-                        <select name="type-of-user">
-                            <option value="event0">-</option>
-                            <option value="event1">Fiesta de 15 años</option>
-                            <option value="event2">Sesión para niños</option>
-                            <option value="event3">Bodas</option>
-                            <option value="event4">Otro</option>
+                    <label for="tipoEvento" class="etiqueta">Tipo de evento</label>
+                        <select id="tipoEvento" name="tipoEvento" required aria-required="true">
+                            <option value="">-</option>
+                            <option value="15">Fiesta de 15 años</option>
+                            <option value="niños">Sesión para niños</option>
+                            <option value="bodas">Bodas</option>
+                            <option value="otro">Otro</option>
                         </select>
-                    </label>
                 </div>
+
+                <div class="form__input" id="serviciosNiños" style="display: none;">
+                    <label for="" class="etiqueta">Servicios para Niños:</label>
+                    <div class="checkbox__container">
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="interior">Interior</label>
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="exterior">Exterior</label>
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="fotos_impresas">Fotos Impresas (CANTIDAD y MEDIDA)</label>
+                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="fotos_digitales">Fotos Digitales</label>
+                    </div>
+                </div>
+
                 <div class="form__input" id="servicios15" style="display: none;">
-                    <label for="" class="etiqueta">Servicios para Fiestas de 15:</label>
+                    <label class="etiqueta">Servicios para Fiestas de 15:</label>
                     <div class="checkbox__container">
                         <label><input type="checkbox" class="checkbox" name="servicios[]" value="enchastre">Enchastre</label>
                         <label><input type="checkbox" class="checkbox" name="servicios[]" value="book_fotos">Book de Fotos</label>
@@ -94,6 +103,7 @@
                         <label><input type="checkbox" class="checkbox" name="servicios[]" value="libro_firmas">Libro de Firmas</label>
                     </div>
                 </div>
+
                 <div class="form__input" id="serviciosBodas" style="display: none;">
                     <label for="" class="etiqueta">Servicios para Bodas:</label>
                     <div class="checkbox__container">
@@ -104,51 +114,43 @@
                         <label><input type="checkbox" class="checkbox" name="servicios[]" value="casamiento_iglesia">Casamiento por Iglesia</label>
                     </div>
                 </div>
-                <div class="form__input" id="serviciosNiños" style="display: none;">
-                    <label for="" class="etiqueta">Servicios para Niños:</label>
-                    <div class="checkbox__container">
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="interior">Interior</label>
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="exterior">Exterior</label>
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="fotos_impresas">Fotos Impresas (CANTIDAD y MEDIDA)</label>
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="fotos_digitales">Fotos Digitales</label>
-                    </div>
-                </div>
+
                 <div class="form__input">
                     <label for="lugar" class="etiqueta">Lugar</label>
-                    <input type="text" placeholder="Rosario" id="lugar" required="required">
+                    <input type="text" id="lugar" placeholder="Rosario" required aria-required="true">
                 </div>
+
                 <div class="form__input">
                     <label for="fecha" class="etiqueta">Fecha</label>
-                    <input type="date" id="fecha" required="required">
+                    <input type="date" id="fecha" required aria-required="true">
                 </div>
             </fieldset>
 
             <!--DISCLAIMER-->
             <div class="form__input">
-                <p class="disclaimer">
-                    <strong>FORMA DE PAGO:</strong><br>
-                    <br>
-                    TOTAL CON <strong>10%</strong> DE DESCUENTO.<br>
-                    <strong>50%</strong> PARA CONGELAR Y <strong>50%</strong> A ACORDAR.<br>
-                    EN CUOTAS CON <strong>10%</strong> DE RECARGO POR MES VENCIDO.<br>
-                    <br>
-                    <strong>EL TOTAL DEL SERVICIO DEBE SER CANCELADO ANTES DEL EVENTO.</strong>
-                </p>
+                <p class="disclaimer"><strong>FORMA DE PAGO:</strong></p>    
+                <ul class="disclaimer__container">
+                    <li class="disclaimer__text">TOTAL CON <strong>10%</strong> DE DESCUENTO.</li> 
+                    <li class="disclaimer__text"><strong>50%</strong> PARA CONGELAR Y <strong>50%</strong> A ACORDAR.</li>
+                    <li class="disclaimer__text">EN CUOTAS CON <strong>10%</strong> DE RECARGO POR MES VENCIDO.</li>
+                    <li class="disclaimer__text"><strong>EL TOTAL DEL SERVICIO DEBE SER CANCELADO ANTES DEL EVENTO.</strong></li>
+                </ul>
             </div>
 
             <!--TEXTAREA-->
             <div class="form__input">
-                <label class="etiqueta">Mensaje</label>
-                <textarea rows="8" placeholder="Detalla tu consulta"></textarea>
+                <label for="mensaje" class="etiqueta">Mensaje</label>
+                <textarea rows="8" placeholder="Detalla tu consulta" id="mensaje"></textarea>
             </div>
         
             <div class="form__input">
-                <label>Aceptar términos y condiciones</label>
-                    <input type="checkbox" class="checkbox">
+                <label for="terminos">
+                    <input type="checkbox" class="checkbox" id="terminos">
+                    Aceptar términos y condiciones
+                </label>
             </div>
             <div class="form__input">
-                <label for="enviar">Enviar</label>
-                <input type="submit">
+                <input type="submit" value="Enviar" id="enviar">
             </div>
         </form>    
     </main>
