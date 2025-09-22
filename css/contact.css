@@ -190,22 +190,29 @@ label {
 .disclaimer {
     font-size: 1.1rem;
     padding: 10px;
-    margin: 0px;
+    margin: 10px auto;
     text-shadow: 0 0 15px #000, 0 0 2px #fff;
-    border-left: 2px solid #fff;
+    border: 2px dashed #eee;
+    border-radius: 5px;
+    color: #444;
+    transition: color .5s ease-in-out;
+    animation: aparecer .4s forwards;
 }
 
 .disclaimer__container {
-    border-bottom: 2px solid #fff;
-    border-left: 2px solid #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    animation: aparecer .4s forwards;
 }
-
+    
 .disclaimer__text {
     font-size: 1.1rem;
     padding: 10px;
     margin: 0px;
     text-shadow: 0 0 15px #000, 0 0 2px #fff;
+    border-radius: 5px;
     list-style: none;
+    animation: aparecer .4s forwards;  
 }
 
 fieldset {

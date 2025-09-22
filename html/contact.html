@@ -71,83 +71,71 @@
 
             <!--DETALLES DEL EVENTO A CONTRATAR-->
             <fieldset>
-                <legend>DETALLES DEL EVENTO</legend>
+        <legend>DETALLES DEL EVENTO</legend>
 
-                <div class="form__input">
-                    <label for="tipoEvento" class="etiqueta">Tipo de evento</label>
-                        <select id="tipoEvento" name="tipoEvento" required aria-required="true">
-                            <option value="">-</option>
-                            <option value="15">Fiesta de 15 años</option>
-                            <option value="niños">Sesión para niños</option>
-                            <option value="bodas">Bodas</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                </div>
+        <div class="form__input">
+            <label for="tipoEvento" class="etiqueta">Tipo de evento</label>
+            <select id="tipoEvento" name="tipoEvento" required aria-required="true">
+                <option value="">-</option>
+                <option value="niños">Sesión para niños</option>
+                <option value="15">Fiesta de 15 años</option>
+                <option value="bodas">Bodas</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
 
-                <div class="form__input" id="serviciosNiños" style="display: none;">
-                    <label class="etiqueta">Servicios para Niños:</label>
-                    <div class="checkbox__container">
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="interior">Interior</label>
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="exterior">Exterior</label>
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="fotos_impresas">Fotos Impresas (CANTIDAD y MEDIDA)</label>
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="fotos_digitales">Fotos Digitales</label>
-                    </div>
-                </div>
-
-                <div class="form__input" id="servicios15" style="display: none;">
-                    <label class="etiqueta">Servicios para Fiestas de 15:</label>
-                    <div class="checkbox__container">
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="enchastre">Enchastre</label>
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="book_fotos">Book de Fotos</label>
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="cobertura_fiesta">Cobertura de Fiesta</label>
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="gigantografia">Gigantografía</label>
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="libro_firmas">Libro de Firmas</label>
-                    </div>
-                </div>
-
-                <div class="form__input" id="serviciosBodas" style="display: none;">
-                    <label class="etiqueta">Servicios para Bodas:</label>
-                    <div class="checkbox__container">
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="fotos_impresas">Fotos Impresas</label>
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="book_fotos">Book de Fotos</label>
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="cobertura_fiesta">Cobertura de Fiesta</label>
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="casamiento_civil">Casamiento por Civil</label>
-                        <label><input type="checkbox" class="checkbox" name="servicios[]" value="casamiento_iglesia">Casamiento por Iglesia</label>
-                    </div>
-                </div>
-
-                <div class="form__input">
-                    <label for="lugar" class="etiqueta">Lugar</label>
-                    <input type="text" id="lugar" placeholder="Rosario" required aria-required="true">
-                </div>
-
-                <div class="form__input">
-                    <label for="fecha" class="etiqueta">Fecha</label>
-                    <input type="date" id="fecha" required aria-required="true">
-                </div>
-            </fieldset>
-
-            <!--DISCLAIMER-->
-            <div class="form__input">
-                <p class="disclaimer"><strong>FORMA DE PAGO:</strong></p>    
-                <ul class="disclaimer__container"></ul>
+        <div class="form__input" id="serviciosNiños" style="display: none;">
+            <label class="etiqueta">Servicios para Niños:</label>
+            <div class="checkbox__container">
+                <label><input type="checkbox" class="checkbox" name="servicios[]" value="interior">Interior</label>
+                <label><input type="checkbox" class="checkbox" name="servicios[]" value="exterior">Exterior</label>
+                <label><input type="checkbox" class="checkbox" name="servicios[]" value="fotos_impresas">Fotos Impresas (CANTIDAD y MEDIDA)</label>
+                <label><input type="checkbox" class="checkbox" name="servicios[]" value="fotos_digitales">Fotos Digitales</label>
             </div>
+        </div>
 
-            <!--TEXTAREA-->
-            <div class="form__input">
-                <label for="mensaje" class="etiqueta">Mensaje</label>
-                <textarea rows="8" placeholder="Detalla tu consulta" id="mensaje"></textarea>
+        <div class="form__input" id="servicios15" style="display: none;">
+            <label class="etiqueta">Servicios para Fiestas de 15:</label>
+            <div class="checkbox__container">
+                <label><input type="checkbox" class="checkbox" name="servicios[]" value="enchastre">Enchastre</label>
+                <label><input type="checkbox" class="checkbox" name="servicios[]" value="book_fotos">Book de Fotos</label>
+                <label><input type="checkbox" class="checkbox" name="servicios[]" value="cobertura_fiesta">Cobertura de Fiesta</label>
+                <label><input type="checkbox" class="checkbox" name="servicios[]" value="gigantografia">Gigantografía</label>
+                <label><input type="checkbox" class="checkbox" name="servicios[]" value="libro_firmas">Libro de Firmas</label>
             </div>
-        
-            <div class="form__input">
-                <label for="terminos">
-                    <input type="checkbox" class="checkbox" id="terminos">
-                    Aceptar términos y condiciones
-                </label>
+        </div>
+
+        <div class="form__input" id="serviciosBodas" style="display: none;">
+            <label class="etiqueta">Servicios para Bodas:</label>
+            <div class="checkbox__container">
+                <label><input type="checkbox" class="checkbox" name="servicios[]" value="fotos_impresas">Fotos Impresas</label>
+                <label><input type="checkbox" class="checkbox" name="servicios[]" value="book_fotos">Book de Fotos</label>
+                <label><input type="checkbox" class="checkbox" name="servicios[]" value="cobertura_fiesta">Cobertura de Fiesta</label>
+                <label><input type="checkbox" class="checkbox" name="servicios[]" value="casamiento_civil">Casamiento por Civil</label>
+                <label><input type="checkbox" class="checkbox" name="servicios[]" value="casamiento_iglesia">Casamiento por Iglesia</label>
             </div>
-            <div class="form__input">
-                <input type="submit" value="Enviar" id="enviar">
-            </div>
+        </div>
+
+        <div class="form__input">
+            <label for="lugar" class="etiqueta">Lugar</label>
+            <input type="text" id="lugar" placeholder="Rosario" required aria-required="true">
+        </div>
+
+        <div class="form__input">
+            <label for="fecha" class="etiqueta">Fecha</label>
+            <input type="date" id="fecha" required aria-required="true">
+        </div>
+    </fieldset>
+
+    <!--DISCLAIMER-->
+    <div class="form__input" id="form">
+        <p class="disclaimer"><strong>FORMA DE PAGO</strong></p>    
+        <ul class="disclaimer__container" id="pagos" style="display: none;"></ul>
+    </div>
+    
+    <div class="form__input">
+        <input type="submit" value="Enviar" id="enviar">
+    </div>
         </form>    
     </main>
 
