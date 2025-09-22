@@ -192,7 +192,7 @@ label {
     padding: 10px;
     margin: 10px auto;
     text-shadow: 0 0 15px #000, 0 0 2px #fff;
-    border: 2px dashed #eee;
+    border: 1px dashed #777;
     border-radius: 5px;
     color: #444;
     transition: color .5s ease-in-out;
@@ -200,7 +200,7 @@ label {
 }
 
 .disclaimer__container {
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 5px;
     animation: aparecer .4s forwards;
 }

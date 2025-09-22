@@ -41,7 +41,7 @@ const validarCheckbox = ()=>{
 const validarCampos = () => {
     if (tipoEvento.value && lugar.value && fecha.value && validarCheckbox())  {
         disclaimerContenido.style.display = "block";
-        disclaimerTitulo.style.border = "2px solid #eee";
+        disclaimerTitulo.style.border = "1px solid #eee";
         disclaimerTitulo.style.color = "#fff";
     } else {
         disclaimerContenido.style.display = "none";
